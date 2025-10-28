@@ -24,7 +24,7 @@ const Register = () => {
 
     if (name && password && email) {
       try {
-        const res = await axios.post("https://holidifywebsitebackend-z6ojo.sevalla.app/api/signup", {
+        const res = await axios.post("https://holidifywebsitebackend-z6ojo.sevalla.app/api/v1/signup", {
           fullName: name,
           email: email,
           password: password,

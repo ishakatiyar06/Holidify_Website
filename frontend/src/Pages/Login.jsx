@@ -20,7 +20,7 @@ const Login = () => {
 
     if (name && password) {
       try {
-        const res = await axios.post("https://holidifywebsitebackend-z6ojo.sevalla.app/api/login", {
+        const res = await axios.post("https://holidifywebsitebackend-z6ojo.sevalla.app/api/v1/login", {
           email: name,
           password: password,
         });
