@@ -1,7 +1,7 @@
 // import { Request, Response } from "express";
 // import userModel, { User } from "./userModel";
 // import httpStatus from "http-status";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 import userModal from "./userModal.js";
 import jwt from "jsonwebtoken";
 //=================================Register=================================//
