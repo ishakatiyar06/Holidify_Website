@@ -1,0 +1,133 @@
+.FooterMain {
+  /* display: flex; */
+  /* width: 100%; */
+  height: auto;
+
+  align-items: flex-start;
+  gap: 81px;
+  flex-shrink: 0;
+  background-color: var(--secondary-normal, #e7e4e4);
+}
+
+.FooterMainRow {
+  width: 100%;
+  padding: 40px 70px;
+  display: flex;
+  gap: 80px;
+}
+
+.FooterLogo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+  max-width: 400px;
+
+  & h5 {
+    color: #0b0b0b;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 155.556% */
+  }
+
+  & p {
+    color: #0c1b3b;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 122.222% */
+    margin-bottom: 0px;
+  }
+}
+
+.FooterList {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+
+  & label {
+    color: #cb5353;
+    font-family: Lato;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 23px; /* 121.053% */
+    letter-spacing: -0.38px;
+  }
+
+  & ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    & a {
+      color: #111212;
+      font-family: Lato;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 150% */
+    }
+  }
+}
+.FooterBottom {
+  text-align: center;
+  color: #0f0947;
+  font-size: 12px;
+  margin: 4px 0px;
+  opacity: 0.4;
+}
+
+@media screen and (max-width: 600px) {
+  .FooterMainRow {
+    padding: 40px 30px;
+    justify-content: center;
+  }
+  .FooterColumnAlign {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .FooterList {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+
+    & label {
+      color: #fff;
+      font-family: Lato;
+      font-size: 19px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 23px; /* 121.053% */
+      letter-spacing: -0.38px;
+    }
+
+    & ul {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+      & a {
+        color: #636f87;
+        font-family: Lato;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+      }
+    }
+  }
+}
+
+/* @media screen and (min-width: 2000px) {
+  .FooterMainRow {
+    justify-content: center;
+  }
+} */

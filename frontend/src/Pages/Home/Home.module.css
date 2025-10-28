@@ -1,0 +1,42 @@
+.HeadingH1 {
+  font-size: 48px;
+  justify-content: center;
+
+  font-family: Nunito;
+}
+
+.CitiesMain {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.CitiesDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.CitiesImg {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.CitiesImg:hover {
+  width: 400px;
+}
+
+.CitiesLabel {
+  font-size: 32px;
+  font-family: Nunito;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* .body {
+  margin: 3em;
+} */
+.card:hover {
+  transform: scale(1.1);
+}
+.card {
+  transition: transform 0.5s;
+}
