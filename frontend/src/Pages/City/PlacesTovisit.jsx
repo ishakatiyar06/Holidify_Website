@@ -84,7 +84,7 @@ const PlacesTovisit = () => {
   const getCityPlacesToVisit = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:3000/api/v1/placetovisit?cityname=${cityname}`
+        `https://holidifywebsitebackend-z6ojo.sevalla.app/api/v1/placetovisit?cityname=${cityname}`
       );
 
       setCityPlacesData(res.data.data.data[0].places);

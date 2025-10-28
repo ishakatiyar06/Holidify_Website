@@ -20,7 +20,7 @@ const CityHome = () => {
   const getCityDetails = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:3000/api/v1/getcityDeatils?cityname=${cityname}`
+        `https://holidifywebsitebackend-z6ojo.sevalla.app/api/v1/getcityDeatils?cityname=${cityname}`
       );
 
       setCitydata(res.data.data.data[0]);

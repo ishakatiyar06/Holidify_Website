@@ -20,7 +20,7 @@ const Reviews = () => {
   const handleReviewSubmit = async () => {
     if (userRating && description && id && cityname) {
       try {
-        const res = await axios.post("http://localhost:3000/api/v1/review", {
+        const res = await axios.post("https://holidifywebsitebackend-z6ojo.sevalla.app/api/v1/review", {
           cityname: cityname,
           userid: id,
           rating: userRating,
