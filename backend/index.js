@@ -3,6 +3,10 @@ import express from "express";
 import appRouter from "./app.Routes.js";
 import { connect } from "mongoose";
 import cors from "cors";
+import mongoose from "mongoose";
+import dotenv from "dotenv";
+dotenv.config();
+
 
 const app = express();
 
@@ -12,7 +16,7 @@ app.use(express.json());
 
 const PORT = process.env.PORT || 3000;
 
-connect("mongodb+srv://Isha:yPqIRIcKKGAk1S7n@cluster0.kfxakyz.mongodb.net/")
+connect(process.env.MONGO_URL)
   .then(() => console.log("MongoDb is connected"))
   .catch((err) => console.log(err));
 
